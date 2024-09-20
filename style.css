@@ -1,0 +1,74 @@
+body {
+  background-color: skyblue;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: cursive;
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  font-weight: 900;
+}
+
+.profil > img {
+  border-radius: 10%;
+}
+
+.profil > img:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+}
+
+.link {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.link > .button {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.link > .button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.footer {
+  margin-top: 10px;
+}
+
+.footer > p {
+  text-align: center;
+}
+
+video {
+  position: fixed;
+  border-radius: 1em;
+  z-index: -1;
+  box-shadow: 0px 0px 50px gray;
+}
